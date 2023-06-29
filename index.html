@@ -7,13 +7,12 @@
     <title>주시회사 수우</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/suwoo.css">
 
     <script src="./js/jquery-1.12.4.min.js"></script>
-    <script src="./js/slick.min.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/suwoo.js"></script>
 </head>
@@ -24,14 +23,14 @@
         <header class="header">
             <div class="inner header_wrap">
                 <h1>
-                    <a href=""><img src="./images/logo.png" alt=""></a>
+                    <a href="/"><img src="./images/logo.png" alt=""></a>
                 </h1>
-                <div class="gnb">
+                <nav class="gnb">
                     <ul class="main_menu">
                         <li>
                             <a href="">회사소개</a>
                             <ul class="sub_menu">
-                                <li><a href="">CEO 인사말</a></li>
+                                <li><a href="./content.html">CEO 인사말</a></li>
                                 <li><a href="">회사개요</a></li>
                                 <li><a href="">연혁</a></li>
                                 <li><a href="">면허/인증/수상</a></li>
@@ -70,7 +69,7 @@
                             </ul>
                         </li>
                     </ul>
-                </div>
+                </nav>
                 <div class="side">
                     <i class="xi-bars"></i>
                 </div>
@@ -129,8 +128,10 @@
 
             <section class="main_content sec">
                 <div class="tit">
-                    <h2>사업분야</h2>
-                    <p>환경과 에너지 사업을 선도하며, 더 나은 미래를 약속합니다.</p>
+                    <h2>OVERVIEW</h2>
+                    <h3>사업분야</h3>
+                    <span>“성장과 행복을 추구하는 기업 주식회사 수우”</span>
+                    <p>수우기업은 환경과 에너지 사업을 선도하며, 더 나은 미래를 약속합니다.</p>
                 </div>
 
                 <div class="inner con">
@@ -170,51 +171,62 @@
                     <div class="left">
                         <div class="tit">
                             <h2>BUSINESS</h2>
-                            <p>지속적인 혁신과 기술역량 향상을 통해 변함없이 발전하는
-                                수우기업
-                            </p>
+                            <h3>주요실적</h3>
+                            <strong>자연과 사람을 위한 환경, <span>에너지 기술기업</span></strong>
+                            <p>주식회사 수우는 풍부한 지식과 시공경험을 바탕으로 고객의 신뢰와 만족을 위해 끊임없이
+                                연구, 개발, 도전하는 전기·통신·소방 분야와 태양광발전장치 및 신재생에너지사업을 제공하는 전문기업입니다.</p>
                         </div>
                     </div>
                     <div class="right">
-                        <ul class="scroll_ul">
+                        <ul>
                             <li>
-                                <figure>
-                                    <img src="./images/pro01.jpg" alt="">
-                                </figure>
-                                <div class="txt">
-                                    <h3>부산명지 문화복합시설</h3>
+                                <div data-aos="fade-up">
+                                    <figure>
+                                        <img src="./images/pro01.jpg" alt="">
+                                    </figure>
+                                    <div class="pro_txt">
+                                        <h3>부산명지 문화복합시설</h3>
+                                    </div>
                                 </div>
                             </li>
                             <li>
-                                <figure>
-                                    <img src="./images/pro02.jpg" alt="">
-                                </figure>
-                                <div class="txt">
-                                    <h3>안성 공도 아파트 신축공사</h3>
+                                <div data-aos="fade-up">
+                                    <figure>
+                                        <img src="./images/pro02.jpg" alt="">
+                                    </figure>
+                                    <div class="pro_txt">
+                                        <h3>부산오페라하우스</h3>
+                                    </div>
                                 </div>
                             </li>
                             <li>
-                                <figure>
-                                    <img src="./images/pro03.jpg" alt="">
-                                </figure>
-                                <div class="txt">
-                                    <h3>한강삼송지축 듀클래스 지식사업센터</h3>
+                                <div data-aos="fade-up">
+                                    <figure>
+                                        <img src="./images/pro03.jpg" alt="">
+                                    </figure>
+                                    <div class="pro_txt">
+                                        <h3>쌍용 더 플래티넘 해운대</h3>
+                                    </div>
                                 </div>
                             </li>
                             <li>
-                                <figure>
-                                    <img src="./images/pro04.jpg" alt="">
-                                </figure>
-                                <div class="txt">
-                                    <h3>이안 동래 센트럴시티</h3>
+                                <div data-aos="fade-up">
+                                    <figure>
+                                        <img src="./images/pro04.jpg" alt="">
+                                    </figure>
+                                    <div class="pro_txt">
+                                        <h3>남원 수창해뜨레 아파트</h3>
+                                    </div>
                                 </div>
                             </li>
                             <li>
-                                <figure>
-                                    <img src="./images/pro05.jpg" alt="">
-                                </figure>
-                                <div class="txt">
-                                    <h3>용인 근린생활시설</h3>
+                                <div data-aos="fade-up">
+                                    <figure>
+                                        <img src="./images/pro05.jpg" alt="">
+                                    </figure>
+                                    <div class="pro_txt">
+                                        <h3>용인 근린생활시설</h3>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
@@ -223,13 +235,13 @@
             </section>
 
 
-            <section class="main_about">
+            <!-- <section class="main_about">
                 <div class="inner about_txt">
                     <h2>ABOUT <span> SU WOO</span></h2>
                     <strong>“변함 없이 지켜라!”</strong>
                     <p>한결 같은 굳건한 바위처럼 언제나 최선을 다하는 주식회사 수우</p>
                 </div>
-            </section>
+            </section> -->
 
         </main>
 
@@ -276,7 +288,6 @@
             <i class="xi-angle-up-thin"></i>
         </div>
     </div>
-
 </body>
 
 </html>
