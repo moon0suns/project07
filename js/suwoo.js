@@ -8,6 +8,22 @@ $(function () {
             : $('.header').removeClass('on')
     });
 
+    $('.main_slide').on('init afterChange', function (e, s, c) {
+        const current = $('.main_slide .slick-current');
+        current.addClass('on').siblings().removeClass('on');
+
+        // 조건문 슬라이드 (1/3)
+        $('.main_visual .slide_num span').text(c ? (c + 1) : 1)
+        $('.main_visual .slide_num strong').text(s.slideCount)
+        console.log(s.slideCount)
+
+
+        $('.main_visual .menu li').eq(0).addClass('on');
+        $('.main_visual .menu li').eq(c).addClass('on')
+            .siblings().removeClass('on');
+    })
+
+
 
     const mainSlide = new Swiper('.main_slide', {
         loop: true,
@@ -46,9 +62,10 @@ $(function () {
         mainSlide.slideNext();
     });
 
-    $('.main_content .itm').on('click', function () {
-        $(this).addClass('on').siblings().removeClass('on');
-    })
+
+    // $('.main_content .itm').on('click', function () {
+    //     $(this).addClass('on').siblings().removeClass('on');
+    // })
 
 
 
@@ -73,5 +90,6 @@ $(function () {
     });
 
     AOS.init();
+
 
 });
